@@ -387,6 +387,3 @@ With this short article I tried my best to create a small capsule of AWS Lamda s
 
 Note: *While building this serverless service, I have referred the link https://dzone.com/articles/a-crash-course-on-serverless-with-aws-building-api.* 
 
-**Hello world**, this is my first Jekyll blog post.
-
-I hope you like it!
