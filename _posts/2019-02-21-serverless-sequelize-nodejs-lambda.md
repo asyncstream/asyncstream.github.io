@@ -1,11 +1,16 @@
 ---
 layout: post
 title:  "Serverless With Nodejs & Sequelize"
+excerpt_separator: <!--more-->
+categories: [serverless, sequelize]
+tags: [serverless, sequelize, lambda, nodejs]
 ---
 
 # Serverless With Nodejs & Sequelize
 
 If you are searching for a solution to setup a Nodejs AWS Lamda function communicates to MySQL then follow the below steps.
+
+<!--more-->
 
 ## Setup
 
