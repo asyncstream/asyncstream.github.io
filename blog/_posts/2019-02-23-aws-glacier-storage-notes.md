@@ -2,6 +2,7 @@
 layout: post
 title:  "AWS Glacier storage - A short overview"
 author: AK
+comments: true
 excerpt_separator: <!--more-->
 categories: [AWS]
 tags: [AWS, Glacier]

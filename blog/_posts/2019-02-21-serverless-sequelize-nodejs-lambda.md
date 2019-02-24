@@ -2,6 +2,7 @@
 layout: post
 title:  "Serverless With Nodejs & Sequelize"
 author: AK
+comments: true
 excerpt_separator: <!--more-->
 categories: [serverless, sequelize]
 tags: [serverless, sequelize, lambda, nodejs]
