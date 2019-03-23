@@ -62,20 +62,18 @@ Create a user using Users menu. This user credential can be used to login to Api
 
     The value of the parameter "apicurio.kc.auth.rootUrl" route the login to keycloak server. The value of "apicurio.kc.auth.realm" should match with the realm configuration done in keycloak for Apicurio.
 
----
-    <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
-        <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9994}"/>
-        <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9996}"/>
-        <socket-binding name="ajp" port="${jboss.ajp.port:7009}"/>
-        <socket-binding name="http" port="${jboss.http.port:7080}"/>
-        <socket-binding name="https" port="${jboss.https.port:7443}"/>
-        <socket-binding name="txn-recovery-environment" port="4712"/>
-        <socket-binding name="txn-status-manager" port="4713"/>
-        <outbound-socket-binding name="mail-smtp">
-            <remote-destination host="localhost" port="25"/>
-        </outbound-socket-binding>
-    </socket-binding-group>
----
+        <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
+            <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9994}"/>
+            <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9996}"/>
+            <socket-binding name="ajp" port="${jboss.ajp.port:7009}"/>
+            <socket-binding name="http" port="${jboss.http.port:7080}"/>
+            <socket-binding name="https" port="${jboss.https.port:7443}"/>
+            <socket-binding name="txn-recovery-environment" port="4712"/>
+            <socket-binding name="txn-status-manager" port="4713"/>
+            <outbound-socket-binding name="mail-smtp">
+                <remote-destination host="localhost" port="25"/>
+            </outbound-socket-binding>
+        </socket-binding-group>
     
     Port numbers are changed to avoid conflict with keycloak server.
 
