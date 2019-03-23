@@ -52,14 +52,17 @@ Create a user using Users menu. This user credential can be used to login to Api
 1. Download Apicurio from https://www.apicur.io/download/
 2. Go to the [installation folder]/bin and start a terminal
 3. Edit the standalone-apicurio.xml with the following settings parameters.
----
-    <system-properties>
-        <property name="apicurio.kc.auth.rootUrl" value="http://localhost:8080/auth"/>
-        <property name="apicurio.kc.auth.realm" value="apicurio"/>
-        <property name="apicurio.hub.storage.jdbc.type" value="h2"/>
-        <property name="apicurio.hub.storage.jdbc.init" value="true"/>
-    </system-properties>
+
+        <system-properties>
+            <property name="apicurio.kc.auth.rootUrl" value="http://localhost:8080/auth"/>
+            <property name="apicurio.kc.auth.realm" value="apicurio"/>
+            <property name="apicurio.hub.storage.jdbc.type" value="h2"/>
+            <property name="apicurio.hub.storage.jdbc.init" value="true"/>
+        </system-properties>
+
     The value of the parameter "apicurio.kc.auth.rootUrl" route the login to keycloak server. The value of "apicurio.kc.auth.realm" should match with the realm configuration done in keycloak for Apicurio.
+
+---
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
         <socket-binding name="management-http" interface="management" port="${jboss.management.http.port:9994}"/>
         <socket-binding name="management-https" interface="management" port="${jboss.management.https.port:9996}"/>
@@ -82,9 +85,9 @@ Once the server is up and running go to http://localhost:8080/ and this will red
 
 You can create a new API schema or import an existing one to Apicurio. Openapi standard or swagger 2 standards are supported.
 
-![](img/apicurio/create-api.png)
+![](/assets/img/apicurio/create-api.png)
 
-![](img/apicurio/view-api.png)
+![](/assets/img/apicurio/view-api.png)
 
 ## Conclusion
 
