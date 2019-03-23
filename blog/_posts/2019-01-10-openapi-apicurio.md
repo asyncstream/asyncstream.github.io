@@ -20,24 +20,29 @@ Please install java version 8+ before setting up keycloak and apicurio
 
 Keycloak is an opensource identity and access management (IAM) software which could control the access of users to Apicurio server.
 1. Download the server from https://www.keycloak.org/downloads.html
-2. Go to the <installation folder>/bin and start a terminal
+2. Go to the [installation folder]/bin and start a terminal
 3. Run standalone.sh (linux) ,standalone.bat (windows)
 
 This will start the Keycloak server. Create admin user for the Keycloak administration.
-![](/img/apicurio/keycloak-admin.png)
+![](/assets/img/apicurio/keycloak-admin.png)
 Login to the Keycloak server with the username you just created.
 
 Once you logged in then create a new realm configuration for Apicurio.
-![](/img/apicurio/keycloak-createrealm.png)
-![](/img/apicurio/keycloak-addrealm.png)
+![](/assets/img/apicurio/keycloak-createrealm.png)
+![](/assets/img/apicurio/keycloak-addrealm.png)
 Create a client under the Clients in the side menu. 
-![](/img/apicurio/keycloak-addclient.png)
+![](/assets/img/apicurio/keycloak-addclient.png)
 
 In the client configuration given the below values to link it with Apicurio server.
+    
     Client ID: apicurio-studio (this could be any meaningfull id)
+    
     Root URL : http://localhost:7080
+    
     Valid Redirect URIs : http://localhost:7080/*
+    
     Admin URL : http://localhost:7080
+    
     Web Origins : http://localhost:7080
 
 Create a user using Users menu. This user credential can be used to login to Apicurio for creating APIs.
@@ -45,8 +50,9 @@ Create a user using Users menu. This user credential can be used to login to Api
 ## Apicurio Setup
 
 1. Download Apicurio from https://www.apicur.io/download/
-2. Go to the <installation folder>/bin and start a terminal
+2. Go to the [installation folder]/bin and start a terminal
 3. Edit the standalone-apicurio.xml with the following settings parameters.
+---
     <system-properties>
         <property name="apicurio.kc.auth.rootUrl" value="http://localhost:8080/auth"/>
         <property name="apicurio.kc.auth.realm" value="apicurio"/>
@@ -66,7 +72,8 @@ Create a user using Users menu. This user credential can be used to login to Api
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
     </socket-binding-group>
-
+---
+    
     Port numbers are changed to avoid conflict with keycloak server.
 
 4. Run standalone.sh (linux) ,standalone.bat (windows)
