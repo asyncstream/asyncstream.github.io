@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AWS S3 storage - A short overview"
-author: AK
+author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
 categories: [AWS]

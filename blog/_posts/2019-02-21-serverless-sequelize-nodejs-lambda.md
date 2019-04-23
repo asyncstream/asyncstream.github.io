@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Serverless With Nodejs & Sequelize"
-author: AK
+author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
 categories: [serverless, sequelize]

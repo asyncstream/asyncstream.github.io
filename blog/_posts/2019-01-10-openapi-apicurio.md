@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "OpenAPI with Apicurio and Keycloak"
-author: AK
+author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
 categories: [REST, OpenAPI]
