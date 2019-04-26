@@ -37,8 +37,8 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: AK
-  email: "us@asyncstream.com"
+  name: PrincipalStream
+  email: "asyncstream@gmail.com"
   github: asyncstream
  
 # Select which links to show in the footer
@@ -66,10 +66,10 @@ disqus: "asyncstream-com"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Finland/Helsinki"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
-permalink: /blog/:year/:month/:day/:title.html  #/:year-:month-:day-:title
+permalink: /blog/:title.html  #/:year-:month-:day-:title
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
@@ -105,4 +105,4 @@ prose:
     - /js
 
 # plugins    
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-sitemap]
