@@ -77,12 +77,14 @@
         <p class="copyright text-muted">
 		  {{ site.author.name }}
 		  &nbsp;&bull;&nbsp;
-		  {{ site.time | date: '%Y' }}
+		  Copyright © {{ site.time | date: '%Y' }}
 		  
 		  {% if site.url-pretty %}
-		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
-		  {% endif %}
+      <a href="{{ site.url }}">{{ site.url-pretty }}</a>      
+      {% endif %}
+      , all rights reserved 
+      &nbsp;&bull;&nbsp;
+		  <a href="{{ site.url }}/privacy.html">Privacy</a>      
 	    </p>
 		<p class="theme-by text-muted">
 		  Theme by
