@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Create a simple rest service with Vert.x & Kotlin - Part1"
-author: Principal Streamer
+author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
 categories: [Vert.x, Kotlin]
