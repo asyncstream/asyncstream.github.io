@@ -5,7 +5,7 @@ author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
 categories: [Vert.x, Kotlin]
-tags: [Vertx, Kotlin, Rest Service]
+tags: [Vert.x, Kotlin, Rest Service]
 ---
 
 ## Overview
