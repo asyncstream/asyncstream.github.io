@@ -123,4 +123,4 @@ Once the index pattern is setup you can view the data in the discover page of Ki
 ## Conclusion
 In this first article of elastic series, I tried to explain how to setup elastic products to stream the csv records, ingest node pipeline to preprocess the csv records, store it in Elasticsearch and then visualize it in Kibana.
 
-**Your feedback is a __Reward!__**
+__**Your feedback is a Reward!**__
