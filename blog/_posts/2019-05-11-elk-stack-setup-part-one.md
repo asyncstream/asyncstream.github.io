@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Elastic stack series - Part 1"
+title:  "Elastic Stack - CSV data processing"
 author: PrincipalStream
 comments: true
 excerpt_separator: <!--more-->
