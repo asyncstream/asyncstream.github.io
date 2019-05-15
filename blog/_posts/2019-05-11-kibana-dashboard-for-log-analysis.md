@@ -12,7 +12,7 @@ tags: [Elasticsearch, Kibana]
 
 In this article of Elasic Stack series, I would like to introduce you to the Kibana dashboard which you love to use for data visualization.
 
-In the article we [Elastic Stack - CSV data processing](/blog/elk-stack-setup-part-one.html) we loaded the csv records of taxi trip. Now this data let us create visualization pallets and view it in Kibana dashboard.
+In the article [Elastic Stack - CSV data processing](/blog/elk-stack-setup-part-one.html) we have loaded the csv records of taxi trip. Now this data let us create visualization pallets and view it in Kibana dashboard.
 
 ## Use Case
 
