@@ -14,7 +14,7 @@ In this article, we will create a Perceteil Table to show the 50,75,95 percentil
 
 ## Use Case
 
-The Taxi operators would like to know the 50,75,90 percentiles of trip tips during different period of travel. 
+The Taxi operators would like to know the 50,75,95 percentiles of trip tips during different period of travel. 
 
 ## Creating Pie Chart in Kibana
 
@@ -24,7 +24,7 @@ The Taxi operators would like to know the 50,75,90 percentiles of trip tips duri
 
 __Configure Metrics__
 
-In the Aggregation filed select "Count" and give the custom label "Trip Count". Add another metric of aggregation "Percentiles" on the field "tip_amount". As the operator wants to know 50, 75, 90 percentiles select those in the percent boxes.
+In the Aggregation filed select "Count" and give the custom label "Trip Count". Add another metric of aggregation "Percentiles" on the field "tip_amount". As the operator wants to know 50, 75, 95 percentiles select those in the percent boxes.
 
 __Buckets Configuration__
 
