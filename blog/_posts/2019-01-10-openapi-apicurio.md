@@ -8,11 +8,11 @@ categories: [REST, OpenAPI]
 tags: [OpenAPI, Apicurio]
 ---
 
-*"The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic". Please check the link https://github.com/OAI/OpenAPI-Specification for more information on OpenApi.*
-
 In this article we will cover how to configure Apicurio with Keycloak in your local machine and creating sample REST Api.
 
 <!--more-->
+
+*"The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic". Please check the link https://github.com/OAI/OpenAPI-Specification for more information on OpenApi.*
 
 Please install java version 8+ before setting up keycloak and apicurio 
 
