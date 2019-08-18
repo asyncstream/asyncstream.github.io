@@ -34,39 +34,39 @@ When the customer clicks on the link a message will be sent back to the system t
 
 The full implementation of this testcase can be viewed [here](https://github.com/asyncstream/cloudmessage-stream/blob/master/src/test/java/com/asyncstream/cloudmessage/stream/service/impl/CloudMessageServiceTest.java)
 
-    First step is to create a process engine.
+First step is to create a process engine.
 
         @Rule
         public final ProcessEngineRule processEngineRule = new ProcessEngineRule(testAwareProcessEngineConfiguration().buildProcessEngine());
 
-    As this BPMN has message send and recieve tasks , we need to create two constants for message name and recieve task id.
+As this BPMN has message send and recieve tasks , we need to create two constants for message name and recieve task id.
 
         private static final String MESSAGE_ACTIVATION_RESULT = "Message_Activation_Result";
         private static final String RECIEVE_ACTIVITY="process_activation_result";
 
-    In the test method call the autoMock for the bpmn process which registers mocks for TaskListner, ExecutinListner and JavaDelegate.
+In the test method call the autoMock for the bpmn process which registers mocks for TaskListner, ExecutinListner and JavaDelegate.
 
         autoMock("bpmn/customer-activation.bpmn");
 
-    Asserts that all the necessary mocks are available.
+Asserts that all the necessary mocks are available.
 
         assertThat(Mocks.get("startActivation")).isNotNull();
         assertThat(Mocks.get("processActivationResult")).isNotNull();
         assertThat(Mocks.get("completeActivation")).isNotNull();
         assertThat(Mocks.get("sendActivationRequest")).isNotNull();
 
-    Configure the deployment with a mock to the recieve message activity.
+Configure the deployment with a mock to the recieve message activity.
 
         processEngineRule.manageDeployment(registerCallActivityMock(RECIEVE_ACTIVITY)
             .onExecutionWaitForMessage(MESSAGE_ACTIVATION_RESULT)
             .deploy(processEngineRule));            
 
-    Verify the mocks for the first to activities using the verify methods of DelegateExpressions.
+Verify the mocks for the first to activities using the verify methods of DelegateExpressions.
     
         verifyExecutionListenerMock("startActivation").executed(); // For Listeners
         verifyJavaDelegateMock("sendActivationRequest").executed(); // For Delegates
 
-    As the 3rd stage of the BPMN is message receieve activity, automate it by correlateMessage with message name.
+As the 3rd stage of the BPMN is message receieve activity, automate it by correlateMessage with message name.
 
         processEngineRule.getRuntimeService().correlateMessage(MESSAGE_ACTIVATION_RESULT);
 
