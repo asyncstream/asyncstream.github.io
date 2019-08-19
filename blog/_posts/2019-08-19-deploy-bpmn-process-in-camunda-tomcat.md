@@ -40,6 +40,16 @@ Camunda documentation clearly explains what are the options to deploy a process.
 
 ## BPMN Diagram
 
+In this sample project, we are deploying the bundle ordering process. The bundle order process internally calls single item ordering process.
+
+Bundle Ordering Process
+
+![](/assets/img/bpmn/bundle-order-process.png)
+
+Single Item Ordering Process
+
+![](/assets/img/bpmn/singleitem-ordering-process.png)
+
 ## Implementation
 
 The application must have a process application class in order to delegate the process deployment in the container. Annotate your process application class with the annotation @ProcessApplication provided by camunda.
