@@ -13,7 +13,7 @@ There are two ways to call sub process in camunda , either using an embedded pro
 
 ## BPMN Diagram
 
-The bpmn diagram is given in the article [Camunda - Deploy process in a shared camunda tomcat server](../deploy-bpmn-process-in-camunda-tomcat.html)
+The bpmn diagram is given in the article [Camunda - Deploy process in a shared camunda tomcat server](./deploy-bpmn-process-in-camunda-tomcat.html)
 
 When the bundle ordering process is triggered , it internally trigger single item process from the step Single Order Process as many time as the number of individual order items.
 
